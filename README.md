@@ -37,3 +37,9 @@ int main() {
 ### Пояснення коду
   - Функція malloc(5 * sizeof(int)) виділяє пам’ять лише для 5 елементів масиву: array[0] до array[4].
   - Запис у array[5] = 999 — це вихід за межі виділеної області пам’яті і саме в цьому моменті відбувається write overflow.
+
+### Вивід
+
+```
+==1234==ERROR: AddressSanitizer: heap-buffer-overflow on address ...
+```
