@@ -14,7 +14,7 @@ int main() {
     }
 
     printf("Now writing out of bounds...\n");
-    array[5] = 999;  // Write overflow! Доступ до 6-го елемента, якого не існує
+    array[5] = 999;  // Write overflow
 
     for (int i = 0; i <= 5; i++) {
         printf("array[%d] = %d\n", i, array[i]);
